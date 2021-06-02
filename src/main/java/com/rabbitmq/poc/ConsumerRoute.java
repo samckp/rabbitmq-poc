@@ -10,7 +10,7 @@ public class ConsumerRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("rabbitmq:my-exch?routingKey=emp&connectionFactory=#rabbitConnectionFactory&vhost=/")
+        from("rabbitmq:my-exch?connectionFactory=#rabbitConnectionFactory&autoDelete=false&vhost=/")
                 .routeId("ConsumerRoute")
                 .log(LoggingLevel.INFO, "BODY-->>  :: ${body}")
 
