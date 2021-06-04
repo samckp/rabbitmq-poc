@@ -5,4 +5,4 @@
 3. Execute this command on sbin folder:  "rabbitmq-plugins.bat enable rabbitmq_management"
 4. now open the url http://localhost:15672 to RabbitMQ MAnagement Portal.
 
-ConsumerRoute not working, parameter issue.
+ConsumerRoute not working, due to camel parameter issue.
